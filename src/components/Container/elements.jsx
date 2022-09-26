@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const StyledContainer = styled((props) => {
   return <div {...props} />;
 })`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: ${(props) => {
     if (props.full) return 0;
     return 'calc((100vw - 1350px) / 2)';
