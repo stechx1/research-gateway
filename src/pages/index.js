@@ -1,11 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Layout } from 'antd'
+const { Content } = Layout;
+
+import { LogoHeader, AntFooter } from '../components';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Page</h1>
-    </div>
-  )
+    <Layout>
+      <LogoHeader/>
+      <Content>Content of the site</Content>
+      <AntFooter />
+    </Layout>
+  );
 }
