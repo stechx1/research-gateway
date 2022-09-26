@@ -2,7 +2,7 @@ import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { Layout } from 'antd';
 const { Content } = Layout;
 
-import { Header, AntFooter } from '../components';
+import { Header, Footer } from '../components';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Content>
         <Component {...pageProps} />
       </Content>
-      <AntFooter />
+      <Footer />
     </Layout>
   );
 }

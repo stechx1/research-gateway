@@ -1,8 +1,6 @@
-import { Layout } from 'antd';
 import { StyledFooter } from './elements';
-const { Footer } = Layout;
 
-export const AntFooter = () => {
+export const Footer = () => {
   return (
     <StyledFooter style={{ textAlign: 'center' }}>
       Powered by RLCatalyst Relevance Lab Pvt. Ltd All rights reserved. 0.0.1

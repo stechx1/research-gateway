@@ -5,5 +5,5 @@ const { Header } = Layout;
 export const StyledHeader = styled((props) => {
   return <Header {...props} />;
 })`
-  background: #232f3e;
+  background: #232f3e !important;
 `;
