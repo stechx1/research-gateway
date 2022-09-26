@@ -2,7 +2,7 @@ import { Input } from 'antd';
 import styled from 'styled-components';
 
 export const StyledFormContainer = styled.div`
-  height: 414px;
+  /* height: 414px; */
   width: 425px;
   background: #fff;
   display: flex;

@@ -7,6 +7,7 @@ import {
   StyledInputPassword,
   StyledLink,
 } from './elements';
+import Button from '../../components/Button/Button';
 
 const SignInForm = () => {
   return (
@@ -33,11 +34,12 @@ const SignInForm = () => {
               visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
             }
           />
-          <div style={{ textAlign: 'right', marginTop: '6px' }}>
+          <div style={{ textAlign: 'right', marginTop: '6px', marginBottom: "24px" }}>
             <StyledLink onClick={() => console.log('Forgot Password')}>
               Forgot Password?
             </StyledLink>
           </div>
+          <Button>Sign In</Button>
         </Form.Item>
       </Form>
     </StyledFormContainer>
