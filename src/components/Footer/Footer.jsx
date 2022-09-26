@@ -1,10 +1,11 @@
 import { Layout } from 'antd';
+import { StyledFooter } from './elements';
 const { Footer } = Layout;
 
 export const AntFooter = () => {
   return (
-    <Footer style={{ textAlign: 'center' }}>
+    <StyledFooter style={{ textAlign: 'center' }}>
       Powered by RLCatalyst Relevance Lab Pvt. Ltd All rights reserved. 0.0.1
-    </Footer>
+    </StyledFooter>
   );
 };
