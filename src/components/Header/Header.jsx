@@ -1,22 +1,14 @@
-import { Layout, Menu } from 'antd';
-const { Header } = Layout;
+import { Image, Menu } from 'antd';
+import { StyledHeader } from './elements';
 
-export const LogoHeader = () => {
+export const Header = () => {
   return (
-    <Header>
-      <div className='logo' />
+    <StyledHeader>
+      <Image src='/images/research-gateway.svg' />
       <Menu
         theme='dark'
         mode='horizontal'
-        defaultSelectedKeys={['2']}
-        items={new Array(15).fill(null).map((_, index) => {
-          const key = index + 1;
-          return {
-            key,
-            label: `nav ${key}`,
-          };
-        })}
       />
-    </Header>
+    </StyledHeader>
   );
 };
