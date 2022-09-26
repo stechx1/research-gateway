@@ -6,10 +6,17 @@ import {
   StyledInput,
   StyledInputPassword,
   StyledLink,
+  StyledFormItem,
 } from './elements';
 import Button from '../../components/Button/Button';
+import { useRouter } from 'next/router';
 
 const SignInForm = () => {
+  const router = useRouter();
+  const onFinish = (values) => {
+    console.log('Success:', values);
+    router.push("/home")
+  };
   return (
     <StyledFormContainer>
       <h1 style={{ fontSize: '24px' }}>Sign In</h1>
@@ -18,14 +25,29 @@ const SignInForm = () => {
         width={'100px'}
         style={{ marginTop: '-5px', marginBottom: '20px' }}
       />
-      <Form layout='vertical'>
-        <Form.Item label='Enter Username'>
+      <Form name='sign-in' onFinish={onFinish} layout='vertical'>
+        <StyledFormItem
+          name='username'
+          label='Enter Username'
+          rules={[
+            {
+              required: true,
+              message: 'Incorrect username. Please try again!',
+            },
+          ]}
+        >
           <StyledInput
             placeholder='Username'
             prefix={<Icon component={() => <img src='/icons/user.svg' />} />}
           />
-        </Form.Item>
-        <Form.Item label='Enter Password' placeholder='Password' prefix=''>
+        </StyledFormItem>
+        <StyledFormItem
+          name='password'
+          label='Enter Password'
+          rules={[
+            { required: true, message: 'Incorrect password. try again!' },
+          ]}
+        >
           <StyledInputPassword
             type='password'
             placeholder='Password'
@@ -34,12 +56,22 @@ const SignInForm = () => {
               visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
             }
           />
-          <div style={{ textAlign: 'right', marginTop: '6px', marginBottom: "24px" }}>
-            <StyledLink onClick={() => console.log('Forgot Password')}>
-              Forgot Password?
-            </StyledLink>
-          </div>
-          <Button>Sign In</Button>
+        </StyledFormItem>
+        <div
+          style={{
+            textAlign: 'right',
+            marginTop: '6px',
+            marginBottom: '24px',
+          }}
+        >
+          <StyledLink onClick={() => console.log('Forgot Password')}>
+            Forgot Password?
+          </StyledLink>
+        </div>
+        <Form.Item>
+          <Button type='primary' htmlType='submit'>
+            Sign In
+          </Button>
         </Form.Item>
       </Form>
     </StyledFormContainer>
