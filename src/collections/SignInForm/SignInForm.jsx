@@ -15,7 +15,7 @@ const SignInForm = () => {
   const router = useRouter();
   const onFinish = (values) => {
     console.log('Success:', values);
-    router.push("/")
+    router.push("/my-projects")
   };
   return (
     <StyledFormContainer>

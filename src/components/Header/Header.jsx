@@ -26,7 +26,7 @@ export const Header = () => {
               <img src='/images/research-gateway.svg' alt='logo' />
             </Menu.Item>
             <Menu.Item key='1'>
-              <Link href='/'>My Projects</Link>
+              <Link href='/my-projects'>My Projects</Link>
             </Menu.Item>
             <Menu.Item key='2'>
               <Link href='/study'>Study</Link>
