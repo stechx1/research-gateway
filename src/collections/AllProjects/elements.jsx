@@ -16,10 +16,10 @@ export const AllProjectsContainer = styled.div`
     }
   }
 
-  p{
+  /* p{
     text-align: center;
     margin-top: 30px;
-  }
+  } */
 `;
 
 export const ProjectInfoBar = styled.div`
