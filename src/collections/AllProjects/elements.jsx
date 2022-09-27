@@ -25,6 +25,11 @@ export const AllProjectsContainer = styled.div`
 export const ProjectInfoBar = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ProjectInfo = styled.div`

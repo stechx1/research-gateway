@@ -15,7 +15,7 @@ const SignInForm = () => {
   const router = useRouter();
   const onFinish = (values) => {
     console.log('Success:', values);
-    router.push("/my-projects")
+    router.push('/my-projects');
   };
   return (
     <StyledFormContainer>
@@ -37,11 +37,15 @@ const SignInForm = () => {
           ]}
         >
           <StyledInput
+            aria-label='username'
+            aria-required='true'
             placeholder='Username'
             prefix={<Icon component={() => <img src='/icons/user.svg' />} />}
           />
         </StyledFormItem>
         <StyledFormItem
+          aria-label='password'
+          aria-required='true'
           name='password'
           label='Enter Password'
           rules={[

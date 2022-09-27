@@ -1,5 +1,6 @@
 import { StyledButton } from '../elements';
 import {
+  ProjectContainer,
   ProjectInfo,
   ProjectItemContainer,
   ProjectStatus,
@@ -17,14 +18,14 @@ export const ProjectItem = ({
   return (
     <ProjectItemContainer>
       <ProjectStatusContainer>
-        <div style={{display: "flex", gap: "20px"}}>
+        <ProjectContainer>
           <img src={imageSrc} alt='image' />
           <ProjectInfo>
             <h2>{projectTitle}</h2>
             <p>{role}</p>
             <h3>Hewlett Hawking</h3>
           </ProjectInfo>
-        </div>
+        </ProjectContainer>
         <ProjectStatus>
           <p>
             Project Status: <span>{status}</span>
