@@ -9,19 +9,20 @@ export const FiltersContainer = () => {
   };
   return (
     <StyledFiltersContainer>
-      <Form.Item label='Sort By'>
-        <StyledSelect
-          ariaLabel='sort by'
-          ariaHidden={true}
-          defaultValue='Sort By'
-          onChange={handleChange}
-        >
-          <Option value='paused'>Paused</Option>
-          <Option value='active'>Active</Option>
-          <Option value='lowToHigh'>Budget: Low to High</Option>
-          <Option value='HighToLow'>Budget: High to Low</Option>
+        <StyledSelect defaultValue='Sort By' onChange={handleChange}>
+          <Option ariaLabel='paused' value='paused'>
+            Paused
+          </Option>
+          <Option ariaLabel='active' value='active'>
+            Active
+          </Option>
+          <Option ariaLabel='lowToHigh' value='lowToHigh'>
+            Budget: Low to High
+          </Option>
+          <Option ariaLabel='highToLow' value='HighToLow'>
+            Budget: High to Low
+          </Option>
         </StyledSelect>
-      </Form.Item>
       <StyledButton icon={<PlusOutlined />}>Add More</StyledButton>
     </StyledFiltersContainer>
   );
