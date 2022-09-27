@@ -8,6 +8,11 @@ export const ProjectItemContainer = styled.div`
   flex-direction: column;
 `;
 
+export const ProjectStatusContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;

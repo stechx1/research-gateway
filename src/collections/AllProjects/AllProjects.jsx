@@ -61,7 +61,7 @@ export const AllProjects = ({ allProjects, active, paused }) => {
           />
         </Col>
       </Row>
-      <p>
+      <p className='bottom-para'>
         No other projects are found. <a>Add Project.</a>
       </p>
     </AllProjectsContainer>
