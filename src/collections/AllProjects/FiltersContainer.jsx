@@ -1,5 +1,5 @@
 import { Button, Select } from 'antd';
-import {PlusOutlined} from "@ant-design/icons"
+import { PlusOutlined } from '@ant-design/icons';
 const { Option } = Select;
 import { StyledButton, StyledFiltersContainer, StyledSelect } from './elements';
 
@@ -9,13 +9,11 @@ export const FiltersContainer = () => {
   };
   return (
     <StyledFiltersContainer>
-      <StyledSelect
-        defaultValue='lucy'
-        onChange={handleChange}
-      >
-        <Option value='jack'>Jack</Option>
-        <Option value='lucy'>Lucy</Option>
-        <Option value='Yiminghe'>yiminghe</Option>
+      <StyledSelect defaultValue='Sort By' onChange={handleChange}>
+        <Option value='paused'>Paused</Option>
+        <Option value='active'>Active</Option>
+        <Option value='lowToHigh'>Budget: Low to High</Option>
+        <Option value='HighToLow'>Budget: High to Low</Option>
       </StyledSelect>
       <StyledButton icon={<PlusOutlined />}>Add More</StyledButton>
     </StyledFiltersContainer>

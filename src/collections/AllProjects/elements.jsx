@@ -7,6 +7,19 @@ export const AllProjectsContainer = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 40px;
+
+  a{
+    color: #3E6BFF;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  p{
+    text-align: center;
+    margin-top: 30px;
+  }
 `;
 
 export const ProjectInfoBar = styled.div`
