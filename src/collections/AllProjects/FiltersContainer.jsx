@@ -10,23 +10,14 @@ export const FiltersContainer = () => {
   return (
     <StyledFiltersContainer>
       <StyledSelect
-        // role='menu'
-        // ariaLabel='sort by'
+        aria-required={false}
         defaultValue='Sort By'
         onChange={handleChange}
       >
-        <Option  value='paused'>
-          Paused
-        </Option>
-        <Option  value='active'>
-          Active
-        </Option>
-        <Option  value='lowToHigh'>
-          Budget: Low to High
-        </Option>
-        <Option value='HighToLow'>
-          Budget: High to Low
-        </Option>
+        <Option value='paused'>Paused</Option>
+        <Option value='active'>Active</Option>
+        <Option value='lowToHigh'>Budget: Low to High</Option>
+        <Option value='HighToLow'>Budget: High to Low</Option>
       </StyledSelect>
       <StyledButton icon={<PlusOutlined />}>Add More</StyledButton>
     </StyledFiltersContainer>

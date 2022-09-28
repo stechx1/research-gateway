@@ -19,7 +19,7 @@ export const ProjectItem = ({
     <ProjectItemContainer>
       <ProjectStatusContainer>
         <ProjectContainer>
-          <img src={imageSrc} alt='image' />
+          <img src={imageSrc} alt={`${projectTitle} image`} />
           <ProjectInfo>
             <h2>{projectTitle}</h2>
             <p>{role}</p>
