@@ -9,20 +9,25 @@ export const FiltersContainer = () => {
   };
   return (
     <StyledFiltersContainer>
-        <StyledSelect defaultValue='Sort By' onChange={handleChange}>
-          <Option ariaLabel='paused' value='paused'>
-            Paused
-          </Option>
-          <Option ariaLabel='active' value='active'>
-            Active
-          </Option>
-          <Option ariaLabel='lowToHigh' value='lowToHigh'>
-            Budget: Low to High
-          </Option>
-          <Option ariaLabel='highToLow' value='HighToLow'>
-            Budget: High to Low
-          </Option>
-        </StyledSelect>
+      <StyledSelect
+        ariaLabel='sort by'
+        aria-multiselectable={true}
+        defaultValue='Sort By'
+        onChange={handleChange}
+      >
+        <Option ariaLabel='paused' value='paused'>
+          Paused
+        </Option>
+        <Option ariaLabel='active' value='active'>
+          Active
+        </Option>
+        <Option ariaLabel='lowToHigh' value='lowToHigh'>
+          Budget: Low to High
+        </Option>
+        <Option ariaLabel='highToLow' value='HighToLow'>
+          Budget: High to Low
+        </Option>
+      </StyledSelect>
       <StyledButton icon={<PlusOutlined />}>Add More</StyledButton>
     </StyledFiltersContainer>
   );

@@ -21,6 +21,7 @@ const SignInForm = () => {
     <StyledFormContainer>
       <h1 style={{ fontSize: '24px' }}>Sign In</h1>
       <img
+        alt='colored-bars'
         src='/images/Colored-bars.svg'
         width={'100px'}
         style={{ marginTop: '-5px', marginBottom: '20px' }}
@@ -37,13 +38,17 @@ const SignInForm = () => {
           ]}
         >
           <StyledInput
+            type='text'
+            role='input'
             aria-label='username'
             aria-required='true'
             placeholder='Username'
-            prefix={<Icon component={() => <img src='/icons/user.svg' />} />}
+            prefix={<Icon component={() => <img src='/icons/user.svg' alt="user-icon" />} />}
           />
         </StyledFormItem>
         <StyledFormItem
+          role='input'
+          type='password'
           aria-label='password'
           aria-required='true'
           name='password'
@@ -55,7 +60,7 @@ const SignInForm = () => {
           <StyledInputPassword
             type='password'
             placeholder='Password'
-            prefix={<Icon component={() => <img src='/icons/lock.svg' />} />}
+            prefix={<Icon component={() => <img src='/icons/lock.svg' alt="lock-icon" />} />}
             iconRender={(visible) =>
               visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
             }
