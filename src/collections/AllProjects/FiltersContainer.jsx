@@ -10,21 +10,21 @@ export const FiltersContainer = () => {
   return (
     <StyledFiltersContainer>
       <StyledSelect
-        ariaLabel='sort by'
-        aria-multiselectable={true}
+        // role='menu'
+        // ariaLabel='sort by'
         defaultValue='Sort By'
         onChange={handleChange}
       >
-        <Option ariaLabel='paused' value='paused'>
+        <Option  value='paused'>
           Paused
         </Option>
-        <Option ariaLabel='active' value='active'>
+        <Option  value='active'>
           Active
         </Option>
-        <Option ariaLabel='lowToHigh' value='lowToHigh'>
+        <Option  value='lowToHigh'>
           Budget: Low to High
         </Option>
-        <Option ariaLabel='highToLow' value='HighToLow'>
+        <Option value='HighToLow'>
           Budget: High to Low
         </Option>
       </StyledSelect>
