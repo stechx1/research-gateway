@@ -8,7 +8,7 @@ export const StyledPageHeader = styled.div`
 `;
 
 export const StyledLink = styled.a`
-  color: #3e6bff;
+  color: #fff;
   text-align: right;
   &:hover {
     text-decoration: underline;
