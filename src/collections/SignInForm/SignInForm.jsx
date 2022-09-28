@@ -40,7 +40,7 @@ const SignInForm = () => {
           <StyledInput
             type='text'
             role='input'
-            aria-label='username'
+            aria-label='usernames'
             aria-required='true'
             placeholder='Username'
             prefix={<Icon component={() => <img src='/icons/user.svg' alt="user-icon" />} />}
@@ -49,7 +49,7 @@ const SignInForm = () => {
         <StyledFormItem
           role='input'
           type='password'
-          aria-label='password'
+          aria-label='passwords'
           aria-required='true'
           name='password'
           label='Enter Password'
