@@ -10,6 +10,7 @@ export const FiltersContainer = () => {
   return (
     <StyledFiltersContainer>
       <StyledSelect
+        role='combobox'
         aria-required={false}
         defaultValue='Sort By'
         onChange={handleChange}
