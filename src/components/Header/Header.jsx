@@ -22,7 +22,7 @@ export const Header = () => {
             mode='horizontal'
           >
             <Menu.Item key='0'>
-              <img src='/images/research-gateway.svg' alt='logo' />
+              <img src='/images/research-gateway.svg' alt='research-gateway-logo' />
             </Menu.Item>
             <Menu.Item key='1'>
               <Link href='/my-projects'>My Projects</Link>
