@@ -31,7 +31,7 @@ export const StyledInputPassword = styled(Input.Password)`
 `;
 
 export const StyledLink = styled.a`
-  color: #3e6bff;
+  color: #1a4fff;
   text-align: right;
   &:hover {
     text-decoration: underline;

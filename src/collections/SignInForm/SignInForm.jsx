@@ -41,16 +41,17 @@ const SignInForm = () => {
             type='text'
             role='input'
             aria-label='usernames'
-            aria-required='true'
             placeholder='Username'
-            prefix={<Icon component={() => <img src='/icons/user.svg' alt="user-icon" />} />}
+            prefix={
+              <Icon
+                component={() => <img src='/icons/user.svg' alt='user-icon' />}
+              />
+            }
           />
         </StyledFormItem>
         <StyledFormItem
-          role='input'
           type='password'
           aria-label='passwords'
-          aria-required='true'
           name='password'
           label='Enter Password'
           rules={[
@@ -58,9 +59,14 @@ const SignInForm = () => {
           ]}
         >
           <StyledInputPassword
+            role='input'
             type='password'
             placeholder='Password'
-            prefix={<Icon component={() => <img src='/icons/lock.svg' alt="lock-icon" />} />}
+            prefix={
+              <Icon
+                component={() => <img src='/icons/lock.svg' alt='lock-icon' />}
+              />
+            }
             iconRender={(visible) =>
               visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
             }
