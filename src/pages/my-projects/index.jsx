@@ -7,6 +7,7 @@ export default function MyProjects() {
     <>
       <Head>
         <title>All Projects</title>
+        <meta name='viewport' content='width=device-width'></meta>
       </Head>
       <PageHeader title='All Projects' />
       <Container style={{ background: '#030A1E' }}>
