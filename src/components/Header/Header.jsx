@@ -2,7 +2,12 @@ import { Image, Menu, Dropdown, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { StyledHeader, StyledMenu } from './elements';
+import {
+  StyledDropdown,
+  StyledHeader,
+  StyledLink,
+  StyledMenu,
+} from './elements';
 
 export const Header = () => {
   const userMenu = (
@@ -58,16 +63,9 @@ export const Header = () => {
             <Menu.Item key='3'>
               <Link href='/key-pairs'>Key Pairs</Link>
             </Menu.Item>
-            <Menu.Item key='4'>
-              <Dropdown overlay={userMenu} trigger={['click']}>
-                <a
-                  style={{
-                    position: 'absolute',
-                    right: '45px',
-                    color: 'white',
-                  }}
-                  onClick={(e) => e.preventDefault()}
-                >
+            <Menu.Item key='4' style={{ marginLeft: 'auto' }}>
+              <StyledDropdown overlay={userMenu} trigger={['hover']}>
+                <StyledLink onClick={(e) => e.preventDefault()}>
                   <Space>
                     <img
                       src='/icons/profile-user.svg'
@@ -76,8 +74,8 @@ export const Header = () => {
                     UMed / Researcher
                     <DownOutlined />
                   </Space>
-                </a>
-              </Dropdown>
+                </StyledLink>
+              </StyledDropdown>
             </Menu.Item>
           </StyledMenu>
         </StyledHeader>

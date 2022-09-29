@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Layout, Menu } from 'antd';
+import { Dropdown, Layout, Menu } from 'antd';
 const { Header } = Layout;
 
 export const StyledHeader = styled((props) => {
@@ -9,9 +9,11 @@ export const StyledHeader = styled((props) => {
 `;
 
 export const StyledMenu = styled(Menu)`
-  &&&.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  &&&.ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu.ant-menu-dark .ant-menu-sub {
     background: #232f3e !important;
-    &::selection{
+    &::selection {
       background: #151c24;
     }
   }
@@ -20,9 +22,22 @@ export const StyledMenu = styled(Menu)`
     background: #151c24;
   }
 
-  &.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+  &.ant-menu.ant-menu-dark .ant-menu-item-selected,
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
     background: #151c24;
   }
 
   background: #232f3e !important;
+`;
+
+export const StyledDropdown = styled(Dropdown)`
+  position: relative;
+`;
+
+export const StyledLink = styled.a`
+  color: white;
+
+  @media screen and (max-width: 600px) {
+    position: initial;
+  }
 `;
