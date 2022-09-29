@@ -63,7 +63,7 @@ export const Header = () => {
             <Menu.Item key='3'>
               <Link href='/key-pairs'>Key Pairs</Link>
             </Menu.Item>
-            {/* <Menu.Item key='4' style={{ marginLeft: 'auto' }}>
+            <Menu.Item key='4' style={{ marginLeft: 'auto' }}>
               <StyledDropdown overlay={userMenu} trigger={['hover']}>
                 <StyledLink onClick={(e) => e.preventDefault()}>
                   <Space>
@@ -76,7 +76,7 @@ export const Header = () => {
                   </Space>
                 </StyledLink>
               </StyledDropdown>
-            </Menu.Item> */}
+            </Menu.Item>
           </StyledMenu>
         </StyledHeader>
       )}
