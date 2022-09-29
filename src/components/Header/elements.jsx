@@ -37,7 +37,7 @@ export const StyledDropdown = styled(Dropdown)`
 export const StyledLink = styled.a`
   color: white;
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     position: initial;
-  }
+  } */
 `;
