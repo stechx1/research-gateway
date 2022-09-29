@@ -58,20 +58,27 @@ export const Header = () => {
             <Menu.Item key='3'>
               <Link href='/key-pairs'>Key Pairs</Link>
             </Menu.Item>
-            {/* <Menu.Item key='4'> */}
-            <Dropdown overlay={userMenu} trigger={['click']}>
-              <a
-                style={{ position: 'absolute', right: '45px', color: 'white' }}
-                onClick={(e) => e.preventDefault()}
-              >
-                <Space>
-                  <img src='/icons/profile-user.svg' alt='user-profile-icon' />
-                  UMed / Researcher
-                  <DownOutlined />
-                </Space>
-              </a>
-            </Dropdown>
-            {/* </Menu.Item> */}
+            <Menu.Item key='4'>
+              <Dropdown overlay={userMenu} trigger={['click']}>
+                <a
+                  style={{
+                    position: 'absolute',
+                    right: '45px',
+                    color: 'white',
+                  }}
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <Space>
+                    <img
+                      src='/icons/profile-user.svg'
+                      alt='user-profile-icon'
+                    />
+                    UMed / Researcher
+                    <DownOutlined />
+                  </Space>
+                </a>
+              </Dropdown>
+            </Menu.Item>
           </StyledMenu>
         </StyledHeader>
       )}

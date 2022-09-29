@@ -19,7 +19,7 @@ export const AllProjects = ({ allProjects, active, paused }) => {
       </ProjectInfoBar>
 
       <Row gutter={[32, 32]}>
-        <Col span={12}>
+        <Col span={12} sm={24} lg={12} xs={24}>
           <ProjectItem
             projectTitle='Chiron'
             role='Principal Investigator'
@@ -29,7 +29,7 @@ export const AllProjects = ({ allProjects, active, paused }) => {
             desc='Small Molecules and Peptide-Based Candidates as Therapeutics and Vaccines for COVID-19 Pandemic'
           />
         </Col>
-        <Col span={12}>
+        <Col span={12} sm={24} lg={12} xs={24}>
           <ProjectItem
             projectTitle='Evolution'
             role='Principal Investigator'
@@ -40,7 +40,7 @@ export const AllProjects = ({ allProjects, active, paused }) => {
           />
         </Col>
 
-        <Col span={12}>
+        <Col span={12} sm={24} lg={12} xs={24}>
           <ProjectItem
             projectTitle='Evolution'
             role='Principal Investigator'
@@ -50,7 +50,7 @@ export const AllProjects = ({ allProjects, active, paused }) => {
             desc='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet'
           />
         </Col>
-        <Col span={12}>
+        <Col span={12} sm={24} lg={12} xs={24}>
           <ProjectItem
             projectTitle='Chiron'
             role='Principal Investigator'

@@ -14,6 +14,9 @@ export const ProjectContainer = styled.div`
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    img {
+      width: 120px;
+    }
   }
 `;
 
@@ -64,6 +67,6 @@ export const ProjectStatus = styled.div`
   }
 
   @media screen and (max-width: 816px) {
-    text-align: center;
+    text-align: left;
   }
 `;
